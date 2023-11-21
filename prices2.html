@@ -1,32 +1,35 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
 <style>
-body{ background-image:url('photo.JPEG');
- background-repeat:no-repeat;
- background-size:100% 150%;
- background-position:center;
+/* Global Styles */
+body {
+  background-image: url('photo.JPEG');
+  background-repeat: no-repeat;
+  background-size: 100% 150%;
+  background-position: center;
 }
 
 footer {
   text-align: center;
   padding: 3px;
-  background-color:#2E4053 ;
+  background-color: #2E4053;
   color: white;
 }
-p.thin{font-weight:lighter;}
 
-</style>
-<head>
- <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="stylesheet.css">
-    <style>
+p.thin {
+  font-weight: lighter;
+}
+
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color:#34495E ;
+  background-color: #34495E;
 }
 
 li {
@@ -42,74 +45,91 @@ li a {
 }
 
 li a:hover {
-  color:#28B463 ;
+  color: #28B463;
 }
-ul{font-family: Calibri Light;}
-p{font-family:Calibri Light;}
+
+ul {
+  font-family: Calibri Light;
+}
+
+p {
+  font-family: Calibri Light;
+}
+
 .myDiv {
-      
-      margin: auto;
-   width: 80%;
- font-weight:100;
+  margin: auto;
+  width: 80%;
+  font-weight: 100;
   padding: 10px;
-    }
-p{font-weight: 100;}
- .color{ border: 2px #2E4053 ;
-  padding: 50px;
-  background-color:#2E4053 ;
-  background-repeat: no-repeat;
-  background-size: cover;}
-  .social-media img{
-    height:30px;
-    margin:0 5px;
 }
 
-//prices html
+.color {
+  border: 2px #2E4053;
+  padding: 50px;
+  background-color: #2E4053;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
-body { 
-            background-color:whitesmoke; 
-            text-align: center;
-        } 
-  
-        .gallery { 
-            display: flex; 
-            margin:1px; 
-            width: 1400px; 
-            justify-content: space-between; 
-            flex-wrap: wrap; 
-        } 
-  
-        figure { 
-            width: 300px; 
-            margin: 10px 0px; 
-            background-color:#2E4053; 
-            border:3px solid white ; 
-        } 
-  
-        figcaption { 
-            text-align: center; 
-            padding: 20px; 
-            font-family:Calibri Light;
-            color: white;
-        } 
+.social-media img {
+  height: 30px;
+  margin: 0 5px;
+}
+
+/* Media Query for Responsiveness */
+
+@media screen and (max-width: 650px) {
+  body {
+    background-size: cover;
+  }
+
+  .about-section {
+    padding: 30px;
+  }
+
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  figure {
+    flex: 1 1 45%;
+    text-align: center;
+    margin: 0;
+  }
+
+  figcaption {
+    margin-top: 10px;
+  }
+
+  footer {
+    padding: 10px;
+  }
+
+  .social-media img {
+    height: 20px;
+    margin: 0 3px;
+  }
+}
+
+
 </style>
-    <head>
+</head>
+ <body>
         <ul>
            <li><img src="logo final.png" alt="logo" style=" width: 20%;height: 15%;"></li>
           
             <li><a class="active" href="index.html">HOME</a></li>
             <li><a href="stores.html">STORES</a></li>
-            <li><a href="#contact">FRANCHISE</a></li>
+            <li><a href="franchisee.html">FRANCHISE</a></li>
             <li><a href="prices2.html">PRICES</a></li>
             <li><a href="login3.html">LOGIN/SIGNUP</a></li>
             <li><a href="aboutusfinal.html">ABOUT US</a></li>
 
           </ul>
         
-        
-          
-</head>
-    <body>
         <center>
            <h1 style="font-family: Calibri Light;">Pricing</h1>
             <div class="gallery"> 
