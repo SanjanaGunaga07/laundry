@@ -1,5 +1,7 @@
 <!doctype html>
 <html lang="en">
+ <head>
+  
 <style>
 body{ background-image:url('photo.JPEG');
  background-repeat:no-repeat;
@@ -99,9 +101,24 @@ input[type=submit]:hover {
   text-align: center;
   box-shadow: 0 4px 8px 0 #34495E ;
 }
+     @media screen and (max-width: 650px) {
+  .column {
+    width: 100%; /* Change to full width for smaller screens */
+    float: none; /* Remove float to stack columns */
+    text-align: center; /* Center the content */
+    margin-bottom: 30px; /* Increase space between columns */
+  }
+}
+
+/* Adjust button size for smaller screens */
+@media screen and (max-width: 650px) {
+  button {
+    width: 80%; /* Adjust button width for smaller screens */
+  }
+}
 
 </style>
-    <head>
+     
         <ul>
             <li><img src="logo final.png" alt="logo" style=" width: 20%;height: 15%;"></li>
             <li><a class="active" href="index.html">HOME</a></li>
