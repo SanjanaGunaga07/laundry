@@ -6,68 +6,119 @@
     <title>About Us</title>
     <style>
         /* Resetting default margin and padding */
-        body, h1, h2, h3, p, ul {
-            margin: 0;
-            padding: 0;
-        }
+body, h1, h2, h3, p, ul {
+    margin: 0;
+    padding: 0;
+}
 
-        /* Global styles */
-        body {
-            background-image: url('photo.JPEG');
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center;
-            margin: 0;
-            padding: 0;
-            font-family: 'Calibri Light', sans-serif;
-            color: #333; /* Change text color if needed */
-        }
+/* Global styles */
+body {
+    background-image: url('photo.JPEG');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    font-family: 'Calibri Light', sans-serif;
+    color: #333; /* Change text color if needed */
+}
 
-        /* Navigation styles */
-        nav ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-            background-color: #34495E;
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-        }
+/* Navigation styles */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #34495E;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
 
-        nav li {
-            flex: 1;
-            text-align: center;
-        }
+nav li {
+    flex: 1;
+    text-align: center;
+}
 
-        nav a {
-            display: block;
-            color: white;
-            text-decoration: none;
-            padding: 10px;
-            transition: background-color 0.3s ease;
-        }
+nav a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+}
 
-        nav a:hover {
-            background-color: #2E4053;
-        }
+nav a:hover {
+    background-color: #2E4053;
+}
 
-        /* About section styles */
-        /* Add your existing styles here */
-        
-        /* Footer styles */
-        footer {
-            text-align: center;
-            padding: 10px;
-            background-color: #2E4053;
-            color: white;
-            position: relative;
-        }
+/* About section styles */
+.about-section {
+    padding: 50px;
+    text-align: center;
+    background-color: #2E4053;
+    color: white;
+    font-family: 'Calibri Light', sans-serif;
+}
 
-        .social-media img {
-            height: 30px;
-            margin: 0 5px;
-        }
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.column {
+    flex: 0 0 30%; /* Adjust based on your layout */
+    margin: 10px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    text-align: center;
+}
+
+.column img {
+    width: 100%;
+    height: auto;
+}
+
+.container {
+    padding: 0 16px;
+}
+
+.title {
+    color: grey;
+}
+
+button {
+    background-color: #04AA6D;
+    color: white;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    cursor: pointer;
+    width: 80%;
+    border-radius: 30px;
+    font-size: 90%;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #2E4053;
+    color: white;
+    position: relative;
+}
+
+.social-media img {
+    height: 30px;
+    margin: 0 5px;
+}
+
     </style>
 </head>
 <body>
