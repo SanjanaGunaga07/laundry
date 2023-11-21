@@ -1,212 +1,142 @@
 <!doctype html>
 <html lang="en">
-<style>
-body{ background-image:url('photo.JPEG');
- background-repeat:no-repeat;
- background-size:100% 150%;
- background-position:center;
-}
 
-footer {
-  text-align: center;
-  padding: 3px;
-  background-color:#2E4053 ;
-  color: white;
-}
-p.thin{font-weight:lighter;}
-
-</style>
 <head>
- <meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="stylesheet.css">
+    <title>Car Showroom</title>
     <style>
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color:#34495E ;
-}
+        /* Global Styles */
+        body {
+            background-image: url('photo.JPEG');
+            background-repeat: no-repeat;
+            background-size: 100% 150%;
+            background-position: center;
+            font-family: 'Calibri Light';
+        }
 
-li {
-  float: left;
-}
-
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-li a:hover {
-  color:#28B463 ;
-}
-ul{font-family: Calibri Light;}
-p{font-family:Calibri Light;}
-.myDiv {
-      
-      margin: auto;
-   width: 80%;
- font-weight:100;
-  padding: 10px;
-    }
-p{font-weight: 100;}
-
- .color{ border: 2px #2E4053 ;
-  padding: 50px;
-  background-color:#2E4053 ;
-  background-repeat: no-repeat;
-  background-size: cover;}
-
-  .social-media img{
-    height:30px;
-    margin:0 5px;
-}
-
-//storeshtml
-body { 
-            background-color:whitesmoke; 
+        footer {
             text-align: center;
-        } 
-  
-        .gallery { 
-            display: flex; 
-            margin:1px; 
-            width: 1400px; 
-            justify-content: space-between; 
-            flex-wrap: wrap; 
-        } 
-  
-        figure { 
-            width: 300px; 
-            margin: 10px 0px; 
-            background-color:#2E4053; 
-            border:3px solid white ; 
-        } 
-  
-        figcaption { 
-            text-align: center; 
-            padding: 20px; 
-            font-family:Calibri Light;
+            padding: 3px;
+            background-color: #2E4053;
             color: white;
+        }
+
+        p.thin {
+            font-weight: lighter;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #34495E;
+            font-family: Calibri Light;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover {
+            color: #28B463;
+        }
+
+        .gallery {
+            display: flex;
+            margin: 1px;
+            width: 100%;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        figure {
+            width: 100%;
+            margin: 10px 0px;
+            background-color: #2E4053;
+            border: 3px solid white;
+            text-align: center;
+            color: white;
+            padding: 20px;
         }
 
         button {
-        background-color: #04AA6D;
-        color: white;
-        padding: 20px ;
-        margin: 8px 0;
-        border: none;
-        cursor: pointer;
-        width: 20%;
-        border-radius:30px;
-        font-size: 90%;
-        }
-input[type=text], select, textarea {
-  width: 70%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 20px;
-  box-sizing: border-box;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  resize: vertical;
-}
-
-body { 
-            background-color:whitesmoke; 
-            text-align: center;
-        } 
-  
-        .gallery { 
-            display: flex; 
-            margin:1px; 
-            width: 1400px; 
-            justify-content: space-between; 
-            flex-wrap: wrap; 
-        } 
-  
-        figure { 
-            width: 300px; 
-            margin: 10px 0px; 
-            background-color:#2E4053; 
-            border:3px solid white ; 
-        } 
-  
-        figcaption { 
-            text-align: center; 
-            padding: 20px; 
-            font-family:Calibri Light;
+            background-color: #04AA6D;
             color: white;
-        } 
-     @media screen and (max-width: 650px) {
-  .column {
-    width: 100%; /* Change to full width for smaller screens */
-    float: none; /* Remove float to stack columns */
-    text-align: center; /* Center the content */
-    margin-bottom: 30px; /* Increase space between columns */
-  }
-}
+            padding: 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 20%;
+            border-radius: 30px;
+            font-size: 90%;
+        }
 
-/* Adjust button size for smaller screens */
-@media screen and (max-width: 650px) {
-  button {
-    width: 80%; /* Adjust button width for smaller screens */
-  }
-}
-</style>
-    <head>
-        <ul>
-           <li><img src="logo final.png" alt="logo" style=" width: 20%;height: 15%;"></li>
-          
-            <li><a class="active" href="index.html">HOME</a></li>
-            <li><a href="stores.html">STORES</a></li>
-            <li><a href="franchisee.html">FRANCHISE</a></li>
-            <li><a href="prices2.html">PRICES</a></li>
-            <li><a href="login3.html">LOGIN/SIGNUP</a></li>
-            <li><a href="aboutusfinal.html">ABOUT US</a></li>
+        input[type=text],
+        select,
+        textarea {
+            width: 70%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 20px;
+            box-sizing: border-box;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            resize: vertical;
+        }
 
-          </ul>
-        
-        
-          <meta charset="UTF-8">
-          <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
-          <title>Car Showroom</title>
-          <link rel="stylesheet"
-          href="C:\Users\sanja\OneDrive\Desktop\stores\bootstrap-5.3.2-dist\css\bootstrap.css" rel="stylesheet">
-          <link rel="stylesheet"
-          href="C:\Users\sanja\OneDrive\Desktop\stores\bootstrap-5.3.2-dist\css\bootstrap.min.css" rel="stylesheet">
-      </head>
-      <center>
-      <body style="background-color: white;font-family:Calibri Light ;">
-          <script
-          src="C:\Users\sanja\OneDrive\Desktop\stores\bootstrap-5.3.2-dist\js\bootstrap.bundle.js">
-      </script>
-          <script
-          src="C:\Users\sanja\OneDrive\Desktop\stores\bootstrap-5.3.2-dist\js\bootstrap.bundle.min.js">
-      </script>
-  
-      
-      
-  <header class="container mt-5">
-      <div class="row">
-          <div class="col-md-6">
-              <br/><br/><h1>Find Nearest Store to you</h1>
-              <div class="input-group mb-3">
-                  <input type="text" class="form-control" placeholder="ENTER LOCATION" aria-label="Search" aria-describedby="basic-addon2">
-  <div class="input-group-append">
-      <button   type="button">Search</button>
-  </div>
-  </div>
-      </div>
-      <div class="col-md-6">
-      </div>
-  </div>
-  <header>
-      <section class="container mt-5">
+        @media screen and (max-width: 650px) {
+            .gallery figure {
+                width: 100%;
+            }
+
+            button {
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li><img src="logo final.png" alt="logo" style="width: 20%; height: 15%;"></li>
+        <li><a class="active" href="index.html">HOME</a></li>
+        <li><a href="stores.html">STORES</a></li>
+        <li><a href="franchisee.html">FRANCHISE</a></li>
+        <li><a href="prices2.html">PRICES</a></li>
+        <li><a href="login3.html">LOGIN/SIGNUP</a></li>
+        <li><a href="aboutusfinal.html">ABOUT US</a></li>
+    </ul>
+
+    <center>
+        <header class="container mt-5">
+            <div class="row">
+                <div class="col-md-6">
+                    <br /><br />
+                    <h1>Find Nearest Store to you</h1>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="ENTER LOCATION" aria-label="Search"
+                            aria-describedby="basic-addon2">
+                        <div class="input-group-append">
+                            <button type="button">Search</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                </div>
+            </div>
+        </header>
+
+        <section class="container mt-5">
           <h2>Stores</h2>
           <div class="row">
               <!--Example car card(repeat for each car)-->
