@@ -41,14 +41,19 @@ span.psw {
   padding-top: 10px;
 }
 
-/* Change styles for span and cancel button on extra small screens */
-@media screen and (max-width: 300px) {
-  span.psw {
-     display: block;
-     float: none;
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%; /* Change to full width for smaller screens */
+    float: none; /* Remove float to stack columns */
+    text-align: center; /* Center the content */
+    margin-bottom: 30px; /* Increase space between columns */
   }
-  .cancelbtn {
-     width: 100%;
+}
+
+/* Adjust button size for smaller screens */
+@media screen and (max-width: 650px) {
+  button {
+    width: 80%; /* Adjust button width for smaller screens */
   }
 }
 </style>
