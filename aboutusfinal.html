@@ -1,182 +1,153 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
- <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="stylesheet.css">
-<style>
-body{ background-image:url('photo.JPEG');
- background-repeat:no-repeat;
- background-size:100% 150%;
- background-position:center;
-}
-
-footer {
-  text-align: center;
-  padding: 3px;
-  background-color:#2E4053 ;
-  color: white;
-}
-p.thin{font-weight:lighter;}
-
-</style>
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
     <style>
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color:#34495E ;
-}
-
-li {
-  float: left;
-}
-
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-li a:hover {
-  color:#28B463 ;
-}
-ul{font-family: Calibri Light;}
-p{font-family:Calibri Light;}
-.myDiv {
-      
-      margin: auto;
-   width: 80%;
- font-weight:100;
-  padding: 10px;
-    }
-p{font-weight: 100;}
- .color{ border: 2px #2E4053 ;
-  padding: 50px;
-  background-color:#2E4053 ;
-  background-repeat: no-repeat;
-  background-size: cover;}
-  .social-media img{
-    height:30px;
-    margin:0 5px;
-}
-
-//aboutushtml
-
-html {
-  box-sizing: border-box;
-}
-
-*, *:before, *:after {
-  box-sizing: inherit;
-}
-
-.column {
-  float: left;
-  width: 32%;
-  margin-bottom: 16px;
-  padding: 0 8px;
-}
-
-.card {
-  box-shadow: 0 4px 8px 0 #34495E ;
-  margin: 8px;
-}
-
-.about-section {
-  padding: 50px;
-  text-align: center;
-  background-color:#2E4053  ;
-  color: white;
-  font-family:  Calibri Light;
-}
-
-.container {
-  padding: 5px 16px;
-}
-
-.container::after, .row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-.title {
-  color: grey;
-}
-button {
-        background-color: #04AA6D;
-        color: white;
-        padding: 20px ;
-        margin: 8px 0;
-        border: none;
-        cursor: pointer;
-        width: 20%;
-        border-radius:30px;
-        font-size: 90%;
+        /* Resetting default margin and padding */
+        body, h1, h2, h3, p, ul {
+            margin: 0;
+            padding: 0;
         }
 
-.button:hover {
-  background-color: #555;
-}
+        /* Global styles */
+        body {
+            background-image: url('photo.JPEG');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            padding: 0;
+            font-family: 'Calibri Light', sans-serif;
+            color: #333; /* Change text color if needed */
+        }
 
-@media screen and (max-width: 650px) {
-  .column {
-    width: 100%; /* Change to full width for smaller screens */
-    float: none; /* Remove float to stack columns */
-    text-align: center; /* Center the content */
-    margin-bottom: 30px; /* Increase space between columns */
-  }
-}
+        /* Navigation styles */
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #34495E;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
 
-/* Adjust button size for smaller screens */
-@media screen and (max-width: 650px) {
-  button {
-    width: 80%; /* Adjust button width for smaller screens */
-  }
-}
+        li {
+            float: none;
+            display: inline-block;
+        }
 
-</style>
-    <head>
-        <ul>
-           <li><img src="logo final.png" alt="logo" style=" width: 20%;height: 15%;"></li>
-          
-            <li><a class="active" href="index.html">HOME</a></li>
-            <li><a href="stores.html">STORES</a></li>
-            <li><a href="franchisee.html">FRANCHISE</a></li>
-            <li><a href="prices2.html">PRICES</a></li>
-            <li><a href="login3.html">LOGIN/SIGNUP</a></li>
-            <li><a href="aboutusfinal.html">ABOUT US</a></li>
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
 
-          </ul>
-        
-        
-          
+        li a:hover {
+            color: #28B463;
+        }
+
+        /* About section styles */
+        .about-section {
+            padding: 50px;
+            text-align: center;
+            background-color: #2E4053;
+            color: white;
+        }
+
+        /* Team section styles */
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        .column {
+            flex: 0 0 30%; /* Adjust based on your layout */
+            margin: 10px;
+            background-color: #f9f9f9;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .column img {
+            width: 100%;
+            height: auto;
+        }
+
+        .container {
+            padding: 0 16px;
+        }
+
+        .title {
+            color: grey;
+        }
+
+        button {
+            background-color: #04AA6D;
+            color: white;
+            padding: 10px;
+            margin-top: 10px;
+            border: none;
+            cursor: pointer;
+            width: 80%;
+            border-radius: 30px;
+            font-size: 90%;
+        }
+
+        button:hover {
+            background-color: #555;
+        }
+
+        /* Footer styles */
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #2E4053;
+            color: white;
+            position: relative;
+        }
+
+        .social-media img {
+            height: 30px;
+            margin: 0 5px;
+        }
+    </style>
 </head>
-    <body>
-    <center>
-        <div class="about-section">
-            <h1>About Us</h1>
-          </div>
-          
-          <h2 style="text-align:center;font-family: Calibri Light ;">Our Team</h2>
-          <center></center>
-          <div class="row">
-            <div class="column">
-              <div class="card">
-                <img src="download.png" alt="Jane" style="width:50%">
+<body>
+    <ul>
+        <li><img src="logo final.png" alt="logo" style="width: 20%; height: auto;"></li>
+        <li><a class="active" href="index.html">HOME</a></li>
+        <li><a href="stores.html">STORES</a></li>
+        <li><a href="franchisee.html">FRANCHISE</a></li>
+        <li><a href="prices2.html">PRICES</a></li>
+        <li><a href="login3.html">LOGIN/SIGNUP</a></li>
+        <li><a href="aboutusfinal.html">ABOUT US</a></li>
+    </ul>
+
+    <div class="about-section">
+        <h1>About Us</h1>
+    </div>
+
+    <div class="row">
+        <div class="column">
+            <div class="card">
+                <img src="download.png" alt="Jane">
                 <div class="container">
-                  <h2>Jane Doe</h2>
-                  <p class="title">CEO & Founder</p>
-                  <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-                  <p>jane@example.com</p>
-                  <p><button class="button">Contact</button></p>
+                    <h2>Jane Doe</h2>
+                    <p class="title">CEO & Founder</p>
+                    <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                    <p>jane@example.com</p>
+                    <button class="button">Contact</button>
                 </div>
-              </div>
             </div>
+        </div>
           
             <div class="column">
               <div class="card">
